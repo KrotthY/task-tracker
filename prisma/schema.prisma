@@ -12,8 +12,8 @@ model task {
   id          Int        @id @default(autoincrement())
   description String?
   statusid    Int        @default(1)
-  createdat   DateTime?  @default(now()) @db.Timestamp(6)
-  updatedat   DateTime?  @db.Timestamp(6)
+  createdat   DateTime   @default(now()) @db.Timestamp(6)
+  updatedat   DateTime   @updatedAt @db.Timestamp(6)
   typestatus  typestatus @relation(fields: [statusid], references: [id], onDelete: NoAction, onUpdate: NoAction)
 }
 

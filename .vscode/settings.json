@@ -1,5 +1,9 @@
 {
   "cSpell.words": [
-    "autoincrement"
+    "autoincrement",
+    "createdat",
+    "statusid",
+    "typestatus",
+    "updatedat"
   ]
 }
